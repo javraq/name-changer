@@ -1,0 +1,18 @@
+old_new_names.txt , A0.txt
+old_new_names.txt , A1.txt
+old_new_names.txt , A2.txt
+old_new_names.txt , A3.txt
+<_io.TextIOWrapper name='old_new_names.txt' mode='a' encoding='cp1252'> , A0.txt
+<_io.TextIOWrapper name='old_new_names.txt' mode='a' encoding='cp1252'> , A1.txt
+<_io.TextIOWrapper name='old_new_names.txt' mode='a' encoding='cp1252'> , A2.txt
+<_io.TextIOWrapper name='old_new_names.txt' mode='a' encoding='cp1252'> , A3.txt
+Old_files\A0.txt , A0.txt
+Old_files\A1.txt , A1.txt
+Old_files\A2.txt , A2.txt
+Old_files\A3.txt , A3.txt
+Old_files\1.txt , A0.txt
+Old_files\2.txt , A1.txt
+Old_files\5.txt , A2.txt
+Old_files\1.txt , A0.txt
+Old_files\2.txt , A1.txt
+Old_files\asd.txt , A2.txt
