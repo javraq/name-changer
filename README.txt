@@ -1,3 +1,4 @@
+0. Create a map called "Old_files" 
 1. put your files in "Old_files" 
 
 WATCH OUT RUNNING THE PROGRAM DELETES THE OLD FILES!!
