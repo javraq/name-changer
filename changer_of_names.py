@@ -2,7 +2,7 @@
 import os
 import glob
 from shutil import copyfile
-x = 0
+x = 1
 
 #Adjust your extention here
 path = 'Old_files/*.txt'
@@ -10,11 +10,17 @@ files = glob.glob(path)
 
 for name in files:
     # Adjust Your extension here
-    new_file_name = "A" + str(x) + ".txt"
+    if x < 10:
+        new_file_name = "A" + "0" + str(x) + ".txt"
+
+    else:
+        new_file_name = "A" + str(x) + ".txt"
 
     with open(name, 'r') as f:
         log = open('old_new_names.txt', 'a')
-        log.write (str(f.name) + " , " + new_file_name + '\n')
+        logname = str(f.name)
+        logname_final= logname[10:]
+        log.write (logname_final + " , " + new_file_name + '\n')
         log.close
         f.close()
         os.rename(f.name , new_file_name)
