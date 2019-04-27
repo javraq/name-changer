@@ -4,17 +4,21 @@ import glob
 from shutil import copyfile
 x = 1
 
-#Adjust your extention here
-path = 'Old_files/*.txt'
+ex = input ("welcome to the changer of names!\nThis program will change a bunch of names for you!\nMake sure you put all the files in the old files folder!\nwatch out only use files of one type of extension\nWhat is the extension? ")
+input_name= input ("Every file will get its own name being YOURINPUT01 ,02 ,03 etc etc \nWhat is the name you want to use?")
+
+path = 'Old_files/*.' + ex
 files = glob.glob(path)
 
+
+
 for name in files:
-    # Adjust Your extension here
+
     if x < 10:
-        new_file_name = "A" + "0" + str(x) + ".txt"
+        new_file_name = input_name + "0" + str(x) + "." + ex
 
     else:
-        new_file_name = "A" + str(x) + ".txt"
+        new_file_name = input_name + str(x) + "." + ex
 
     with open(name, 'r') as f:
         log = open('old_new_names.txt', 'a')
